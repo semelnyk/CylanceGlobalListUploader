@@ -23,3 +23,4 @@ python vt.py -h
 
 python vt.py -k Virus Total personal API key -i input.txt
 ```
+![Screenshot](demo.png)
