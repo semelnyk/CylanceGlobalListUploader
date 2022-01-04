@@ -13,14 +13,16 @@ Anyways, to automate above, this simple python script does the following:
 There are no prerequisites other than list of hashes as an input, python and those two libraries installed:
 ```
 pip install requests
-
+```
+```
 pip install pywin32
 ```
 
 Usage:
 ```
 python vt.py -h
-
+```
+```
 python vt.py -k Virus Total personal API key -i input.txt
 ```
 ![Screenshot](demo.png)
