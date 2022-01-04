@@ -10,7 +10,7 @@ Anyways, to automate above, this simple python script does the following:
 - if SHA256 hash from the input was found in VT, AND/OR a non-SHA256 hash has SHA256 equivalent in VT – next, script checks JSON fields related to Cylance, looking for ‘Not found’ and ‘Undetected’ scenarios (also candidates for Global list).
 - in case of ‘Unable to process file type’ / ‘Timeout’ / ’Confirmed timeout’ statuses, regardless of hashes - since we can’t be 100% sure how Cylance treats them, whether those are indeed hash format or maybe other handling issues, such hashes are not displayed.
 
-There are no prerequisites other than list of hashes as an input, python and those two libraries installed:
+There are no prerequisites other than list of hashes as an input.txt, python and those two libraries installed:
 ```
 pip install requests
 ```
