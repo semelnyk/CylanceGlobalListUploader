@@ -1,8 +1,8 @@
 # CylanceGlobalList
 
-Based on a current Cylance Global List functionality, it [only supports SHA256 format](https://docs.blackberry.com/en/unified-endpoint-security/cylance--products/blackberry-on-prem-administration-guide/Global_Lists/Add_a_Global_List_Entry). Of course, issue starts when it comes to adding relevant hashes (often times not SHA256), since the only option to find SHA256 equivalent (if there is such) as well as its coverage & detection status – is by going to VirusTotal and manually copy/pasting… while as of now, unfortunately, nothing being offered by the vendor - Balckberry/Cylance in that regard.. which is sad, especially often times considering engine versions difference (VT vs local endpoint) and a huge amount of hashes to be verified.
+Based on a current Cylance Global List functionality, it [only supports SHA256 format](https://docs.blackberry.com/en/unified-endpoint-security/cylance--products/blackberry-on-prem-administration-guide/Global_Lists/Add_a_Global_List_Entry). 
 
-Anyways, to automate above, this simple python script does the following:
+The use case for this script - when it comes to bulk hashes verification (not only SHA256) against Cylance engine in VirusTotal (for example, to add only relevant hashes into GlobalList). Hence, this script does the following:
 
 - as an input takes a file with a list of hashes (various formats)
 - queries Virus Total (API V2), looking for ‘sha256’ JSON field in reply.
